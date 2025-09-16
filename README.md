@@ -38,7 +38,7 @@ $$\mathbf{z} = \boldsymbol{\mu} + \boldsymbol{\sigma} \odot \boldsymbol{\epsilon
 $$\mathcal{L}_{\text{recon}} = \text{BCE}(\mathbf{x}, \hat{\mathbf{x}})$$
 
 **KL Divergence (Closed-form for Gaussians)**
-$$\mathcal{L}_{\text{KL}} = -\frac{1}{2} \sum_{j=1}^{J} \left(1 + \log \sigma_j^2 - \mu_j^2 - \sigma_j^2\right)$$
+$$\mathcal{L}_{\text{KL}} = -\frac{1}{2}  \sum\_{j=1}^{J} \left(1 + \log (\sigma_j^2) - \mu_j^2 - \sigma_j^2\right)$$
 
 **Total Loss**
 $$\mathcal{L} = \mathcal{L}_{\text{recon}} + \mathcal{L}_{\text{KL}}$$
